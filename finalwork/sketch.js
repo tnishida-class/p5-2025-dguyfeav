@@ -1,13 +1,71 @@
-// 最終課題を制作しよう
+function setup() {
+createCanvas(400, 600);
 
-function setup(){
-  createCanvas(windowWidth, windowHeight);
+// noFill()：これ以降に描画する図形を塗りつぶさないように設定する
+noFill();
+
+// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す
+for (let i = 1; i <= 5; i++) {
+// let x：円の中心のx座標を入れるための変数を宣言する
+let x;
+// let y：円の中心のy座標を入れるための変数を宣言する
+let y;
+
+// let colors：5色分のRGB値を配列（リスト）として準備する
+let colors = [
+[0, 153, 224], // 1番目: 青
+[0, 0, 0], // 2番目: 黒
+[255, 0, 0], // 3番目: 赤
+[255, 216, 0], // 4番目: 黄
+[0, 201, 117] // 5番目: 緑
+];
+
+// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す
+// (配列のインデックスは0から始まるため、i-1 を使う)
+let c = colors[i - 1];
+
+// if(i<=3)：もし i が3以下なら（1, 2, 3回目）
+if (i <= 3) {
+// x=i*80：x座標を 80, 160, 240 と設定する (上の段)
+x = i * 80;
+}
+// else：そうでなければ（i が4または5の時）
+else {
+// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)
+x = i * 80 - 200;
 }
 
-function draw(){
-  background(160, 192, 255);
+// if(i<=3)：もし i が3以下なら（1, 2, 3回目）
+if (i <= 3) {
+// y=50：y座標を 50 に設定する (上の段)
+y = 50;
+}
+// else：そうでなければ（i が4または5の時）
+else {
+// y=80：y座標を 80 に設定する (下の段)
+y = 80;
 }
 
-function windowResized(){
-  resizeCanvas(windowWidth, windowHeight);
+// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する
+stroke(c[0], c[1], c[2]);
+
+// strokeWeight(3)：線の太さを3ピクセルに設定する
+strokeWeight(3);
+
+// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す
+drawcircle(x, y);
 }
+} // setup関数の終わり
+
+
+// drawcircle関数：円を描画するための自作関数
+// (x, y) を引数(ひきすう)として受け取る
+function drawcircle(x, y) {
+// const size = 60：円の直径を 60 に設定する
+const size = 60;
+
+// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する
+ellipse(x, y, size, size);
+} // drawcircle関数の終わり
+
+
