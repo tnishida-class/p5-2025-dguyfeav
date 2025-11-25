@@ -464,6 +464,36 @@
           ]
         }
       }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 3:07:40 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 3:07:47 PM",
+          "sources": [
+            {
+              "fileExtension": "",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}\r\n\r\n"
+            }
+          ]
+        }
+      }
     }
   ]
 }
