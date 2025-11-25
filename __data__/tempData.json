@@ -1,0 +1,499 @@
+{
+  "data": [
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 11:41:28 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup(){\r\n  createCanvas(100, 100);\r\n   for(let i = 0; i < 10; i++){\r\n    let size = (i + 1) * 10;\r\n  noFill();\r\n   if(i < 5){\r\n      stroke(0, 0, 255); // 青\r\n    } else {\r\n      stroke(255, 0, 0); // 赤\r\n    }\r\n    ellipse(50, 50, size, size);\r\n  //for(let i = 0; i < 10; i++){\r\n    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 11:45:39 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup(){\r\n  createCanvas(100, 100);\r\n   for(let i = 0; i < 10; i++){\r\n    let size = (i + 1) * 10;\r\n  noFill();\r\n   if(i < 5){\r\n      stroke(0, 0, 255); // 青\r\n    } else {\r\n      stroke(255, 0, 0); // 赤\r\n    }\r\n    ellipse(50, 50, size, size);\r\n  \r\n    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 11:48:02 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(200, 200);\r\n  const size = width / 8; // マスの一辺の長さ\r\n  noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      // BLANK[1] ヒント： rectのx座標は size * i, y座標は size * j\r\n    }\r\n  }\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 12:04:58 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\n  createCanvas(200, 200);\r\n  Fill(0)\r\n  const size = width / 8; // マスの一辺の長さ\r\n  noStroke();\r\n  for(let i = 0; i < 8; i++){\r\n    for(let j = 0; j < 8; j++){\r\n      // BLANK[1] ヒント： rectのx座標は size * i, y座標は size * j\r\n    }\r\n  }\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 3:16:13 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// チェッカー\r\nfunction setup() {\r\ncreateCanvas(40, 100);\r\nfill(100);\r\nconst size = width / 8; // マスの一辺の長さ\r\nnoStroke();\r\nfor(let i = 0; i < 8; i++){\r\nfor(let j = 0; j < 8; j++){\r\n// BLANK[1] ヒント： rectのx座標は size * i, y座標は size * j\r\n\r\nif(j % 2 == 0){\r\nrect(5+i * 10, j * 5, 5, 5);\r\n}\r\nelse{\r\nrect( i * 10, j * 5, 5, 5);\r\n}\r\n}\r\n}\r\n\r\nfill(255, 0, 0);\r\nfor(let i = 0; i < 8; i++){\r\nfor(let j = 0; j < 3; j++){\r\nif(j % 2 == 0){\r\nellipse(7.5+i * 10, 2.5+j * 5, 4, 4);\r\n}\r\nelse{\r\nellipse( 2.5+i * 10, 2.5+j * 5, 4, 4);\r\n\r\n}\r\n}\r\n}\r\n\r\nfill(0, 0, 0);\r\nfor(let i = 0; i < 8; i++){\r\nfor(let j = 0; j < 3; j++){\r\nif(j % 2 == 0){\r\nellipse(2.5+i * 10, 27.5+j * 5, 4, 4);\r\n}\r\nelse{\r\nellipse( 7.5+i * 10, 27.5+j * 5, 4, 4);\r\n\r\n}\r\n}\r\n}\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/14/2025, 3:17:51 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++){\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\nif(i % 2 == 0){\r\nfill(blue)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\nelse{\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/21/2025, 11:20:40 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 心臓の鼓動のようなアニメーション\r\nconst cycle = 100; // 1周期のフレーム数\r\nlet count; // 何フレーム目か\r\n\r\nfunction setup(){\r\ncreateCanvas(200, 200);\r\ncount = 0;\r\n}\r\n\r\n\r\nfunction draw() {\r\nbackground(160, 192, 255);\r\ncount = (count + 1) % cycle; //countは一生増えるので100で割った余りで考える\r\nif (keyIsPressed) {\r\ncount = (count + 2) % cycle; //キーボを押している間は+2なので動きは早く見える\r\n}\r\nif (count < cycle / 2) {\r\nsize = 50 + cycle - count;\r\n} else {\r\nsize = 50 + count;\r\n}\r\nellipse(width / 2, height / 2, size, size);\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/21/2025, 11:39:00 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup(){\r\n  createCanvas(100, 100);\r\n   for(let i = 0; i < 10; i++){//forは繰り返し,letは変数\r\n    let size = (i + 1) * 10;\r\n  noFill();//色を埋めない\r\n   if(i < 5){\r\n      stroke(0, 0, 255); // 青色の線\r\n    } else {\r\n      stroke(255, 0, 0); // 赤色の線\r\n    }\r\n    ellipse(50, 50, size, size);\r\n  \r\n    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/21/2025, 11:39:00 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup(){\r\n  createCanvas(100, 100);\r\n   for(let i = 0; i < 10; i++){//forは繰り返し,letは変数\r\n    let size = (i + 1) * 10;\r\n  noFill();//色を埋めない\r\n   if(i < 5){\r\n      stroke(0, 0, 255); // 青色の線\r\n    } else {\r\n      stroke(255, 0, 0); // 赤色の線\r\n    }\r\n    ellipse(50, 50, size, size);\r\n  \r\n    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/21/2025, 3:18:10 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 2D アニメーションゲームのようなインタラクション\r\nlet x, y;\r\nlet vx, vy;\r\nconst g = 1;\r\nconst vyMax = 20;\r\n\r\nfunction setup(){\r\ncreateCanvas(windowWidth, windowHeight);\r\nx = width / 2;\r\ny = height / 2;\r\nvx = 0;\r\nvy = 0;\r\n}\r\n\r\nfunction windowResized(){\r\nresizeCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\nbackground(160, 192, 255);\r\nconst size = height * 0.1; // キャラクターのサイズ\r\n\r\n// 地面を描く\r\nconst groundY = height * 0.8;\r\nfill(64, 192, 64);\r\nrect(0, groundY, width, height - groundY);\r\n\r\n// 速くなりすぎないように制限\r\nvx = constrain(vx, -20, 20);\r\nvy = constrain(vy, -20, 20);\r\n\r\nvy += g; // 重力は「速度の変化量」\r\nvy = constrain(vy, -vyMax, vyMax); // 速度が大きくなりすぎないように調整\r\n\r\n\r\ny = constrain(y, 0, height);\r\n\r\n// 位置を更新\r\nx += vx;\r\ny += vy;\r\n\r\nif (y > groundY) {\r\ny = groundY ; // 地面の上に正確に乗せる\r\nvy = 0; // 縦方向の速度をリセット\r\n}\r\n\r\nif (keyIsDown(LEFT_ARROW)) {\r\n// 左キーが押されている場合、さらにダッシュキーも押されているかチェック\r\nif (keyIsDown(\"A\".charCodeAt(0)) || keyIsDown(\" \".charCodeAt(0))) {\r\nx -= 10; // ダッシュ左移動\r\n} else {\r\nx -= 5; // 通常左移動\r\n}\r\n}\r\n\r\nelse if (keyIsDown(RIGHT_ARROW)) {\r\n// 右キーが押されている場合、さらにダッシュキーも押されているかチェック\r\nif (keyIsDown(\"A\".charCodeAt(0)) || keyIsDown(\" \".charCodeAt(0))) {\r\nx += 5; // ダッシュ右移動\r\n} else {\r\nx += 5; // 通常右移動\r\n}\r\n}\r\n\r\n\r\n// キャラクターを描く\r\nfill(0);\r\nellipse(x, y, size, size);\r\n}\r\n\r\n\r\n\r\nfunction keyPressed(){\r\nif(keyCode == UP_ARROW){\r\nif(vy==0){vy=-15}\r\nif(x < 0 || x > width){ vx = -1 * vx; }\r\nif(y < 0 || y > height){ vy = -1 * vy; }\r\n}\r\n\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:12:11 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++){//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:12:11 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++){//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:12:11 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++){//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:16:38 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++)//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\n    {\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:20:08 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++)//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\n    {\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:20:11 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++)//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\n    {\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:23:21 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// ギリシャ国旗（ほかの国旗に挑戦してもOK）\r\nfunction setup() {\r\ncreateCanvas(270, 180);\r\nnoStroke();\r\nbackground(255);\r\n\r\nconst d = height / 9; // 縞1本の太さ\r\nconst blue = color(0, 51, 160);//青色の表示方式（RBG）\r\n\r\n// 縞を描く\r\nfor(let i = 0; i < 9; i++)//i を 0 から 9 まで繰り返し１ずつ足す\r\n// BLANK[1] ヒント：縞の色を交互に変えるには2で割った余りを使おう\r\n    {\r\nif(i % 2 == 0){//i が偶数かどうかを判定する条件式,% は割り算の余りを求める演算子だから、、i ÷ 2 の余りが 0ならば\r\nfill(blue)//線は青で \r\nrect(0, i * d, width, (i + 1) * d);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\n}\r\nelse{//仮定が成り立たないならば\r\nfill(255)\r\nrect(0, i * d, width, (i + 1) * d);\r\n}\r\n}\r\n// 十字を描く\r\nconst size = d * 5;\r\nfill(blue);\r\nrect(0, 0, size, size);\r\nfill(255);\r\nrect(d * 2, 0, d, size);//rectは四角形。rect(xのスタート、ｙのスタート、ｘの終わり、ｙの終わり)\r\nfill(255);\r\nrect(0, d*2, size, d)\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "10/28/2025, 11:30:59 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 小手調べ\r\nfunction setup(){\r\n  createCanvas(100, 100);\r\n   for(let i = 0; i < 10; i++){//forは繰り返し,letは変数　i を 0 から 9 まで繰り返し１ずつ足す\r\n    let size = (i + 1) * 10;//（i+1）×１０\r\n  noFill();//色を埋めない\r\n   if(i < 5){　//iが５より小さいなら、青、そうでないなら赤\r\n      stroke(0, 0, 255); // 青色の線\r\n    } else {\r\n      stroke(255, 0, 0); // 赤色の線\r\n    }\r\n    ellipse(50, 50, size, size);//楕円（中心ｘ、中心ｙ、幅、高さ）\r\n  \r\n    // BLANK[1] 条件分岐を使って、前半は赤、後半は青で円を描こう\r\n  }\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 10:50:05 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// EUの旗を描いてみよう\r\nfunction setup(){\r\ncreateCanvas(200, 200);\r\nbackground(0,0,100);\r\nnoStroke();\r\nfor(let i = 0; i < 12; i++){\r\nconst theta = TWO_PI * i / 12;\r\nconst x = 100 + cos(theta) * 50;\r\nconst y = 100 + sin(theta) * 50;\r\nstar(x, y, 10);\r\n}\r\n}\r\n\r\n// BLANK[1] ヒント：star 関数をここにコピーして、 draw 内で ellipse の代わりに使おう\r\nfunction star(cx, cy, r){\r\nbeginShape(); // 点つなぎを始める\r\nfor(let i = 0; i < 5; i++){\r\nconst theta = TWO_PI * i * 2 / 5 - HALF_PI;\r\nconst x = cx + cos(theta) * r;\r\nconst y = cy + sin(theta) * r;\r\nvertex(x, y); // 次につなぐ点を１つ増やす\r\n}\r\nendShape(CLOSE); // 点つなぎを終わる\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 10:50:05 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// EUの旗を描いてみよう\r\nfunction setup(){\r\ncreateCanvas(200, 200);\r\nbackground(0,0,100);\r\nnoStroke();\r\nfor(let i = 0; i < 12; i++){\r\nconst theta = TWO_PI * i / 12;\r\nconst x = 100 + cos(theta) * 50;\r\nconst y = 100 + sin(theta) * 50;\r\nstar(x, y, 10);\r\n}\r\n}\r\n\r\n// BLANK[1] ヒント：star 関数をここにコピーして、 draw 内で ellipse の代わりに使おう\r\nfunction star(cx, cy, r){\r\nbeginShape(); // 点つなぎを始める\r\nfor(let i = 0; i < 5; i++){\r\nconst theta = TWO_PI * i * 2 / 5 - HALF_PI;\r\nconst x = cx + cos(theta) * r;\r\nconst y = cy + sin(theta) * r;\r\nvertex(x, y); // 次につなぐ点を１つ増やす\r\n}\r\nendShape(CLOSE); // 点つなぎを終わる\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 10:50:05 AM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// EUの旗を描いてみよう\r\nfunction setup(){\r\ncreateCanvas(200, 200);\r\nbackground(0,0,100);\r\nnoStroke();\r\nfor(let i = 0; i < 12; i++){\r\nconst theta = TWO_PI * i / 12;\r\nconst x = 100 + cos(theta) * 50;\r\nconst y = 100 + sin(theta) * 50;\r\nstar(x, y, 10);\r\n}\r\n}\r\n\r\n// BLANK[1] ヒント：star 関数をここにコピーして、 draw 内で ellipse の代わりに使おう\r\nfunction star(cx, cy, r){\r\nbeginShape(); // 点つなぎを始める\r\nfor(let i = 0; i < 5; i++){\r\nconst theta = TWO_PI * i * 2 / 5 - HALF_PI;\r\nconst x = cx + cos(theta) * r;\r\nconst y = cy + sin(theta) * r;\r\nvertex(x, y); // 次につなぐ点を１つ増やす\r\n}\r\nendShape(CLOSE); // 点つなぎを終わる\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 1:56:15 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// 最終課題を制作しよう\r\n\r\nfunction setup(){\r\n  createCanvas(windowWidth, windowHeight);\r\n}\r\n\r\nfunction draw(){\r\n  background(160, 192, 255);\r\n}\r\n\r\nfunction windowResized(){\r\n  resizeCanvas(windowWidth, windowHeight);\r\n}\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 1:56:45 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 2:05:37 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり\r\n\r\n// 吹き出し\r\n\r\nfunction draw(){\r\nbackground(220);\r\nballoon(\"関数は難しい？\", 100, 100);\r\nballoon(\"関数は便利？\", mouseX, mouseY);\r\n}\r\n\r\nfunction balloon(t, x, y){\r\nconst w = textWidth(t); // テキストの幅\r\nconst h = textAscent() + textDescent(); // テキストの高さ\r\nconst p = 4; // 余白の大きさ (padding)\r\n\r\nconst rectW = w + p * 2; // 矩形の幅\r\nconst rectH = h + p * 2; // 矩形の高さ\r\n\r\npush();\r\n\r\n// BLANK[1] 吹き出しの背景を先に描く\r\nfill(20,70,70);\r\nnoStroke();\r\nrect(x, y, rectW, rectH, 8); //xy横幅高さ丸み度\r\n\r\n\r\n// BLANK[2] 吹き出しの三角形を描く\r\nfill(20,70,70);\r\ntriangle(\r\nx + rectW - p*2, y + rectH, // 左上\r\nx + rectW - p/2, y + rectH - 30, // 右上\r\nx + rectW, y + rectH + 15 // 下\r\n);\r\n\r\n// 吹き出しのテキストを次に描く\r\ntextAlign(LEFT, CENTER);\r\nfill(255);\r\ntext(t, x + p, y + h / 2 + p);\r\n\r\npop();\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 2:06:14 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり\r\n\r\n// 吹き出し\r\n\r\nfunction draw(){\r\nbackground(0);\r\nballoon(\"関数は難しい？\", 100, 100);\r\nballoon(\"関数は便利？\", mouseX, mouseY);\r\n}\r\n\r\nfunction balloon(t, x, y){\r\nconst w = textWidth(t); // テキストの幅\r\nconst h = textAscent() + textDescent(); // テキストの高さ\r\nconst p = 4; // 余白の大きさ (padding)\r\n\r\nconst rectW = w + p * 2; // 矩形の幅\r\nconst rectH = h + p * 2; // 矩形の高さ\r\n\r\npush();\r\n\r\n// BLANK[1] 吹き出しの背景を先に描く\r\nfill(20,70,70);\r\nnoStroke();\r\nrect(x, y, rectW, rectH, 8); //xy横幅高さ丸み度\r\n\r\n\r\n// BLANK[2] 吹き出しの三角形を描く\r\nfill(20,70,70);\r\ntriangle(\r\nx + rectW - p*2, y + rectH, // 左上\r\nx + rectW - p/2, y + rectH - 30, // 右上\r\nx + rectW, y + rectH + 15 // 下\r\n);\r\n\r\n// 吹き出しのテキストを次に描く\r\ntextAlign(LEFT, CENTER);\r\nfill(255);\r\ntext(t, x + p, y + h / 2 + p);\r\n\r\npop();\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 2:06:40 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり\r\n\r\n// 吹き出し\r\n\r\nfunction draw(){\r\nballoon(\"関数は難しい？\", 100, 100);\r\nballoon(\"関数は便利？\", mouseX, mouseY);\r\n}\r\n\r\nfunction balloon(t, x, y){\r\nconst w = textWidth(t); // テキストの幅\r\nconst h = textAscent() + textDescent(); // テキストの高さ\r\nconst p = 4; // 余白の大きさ (padding)\r\n\r\nconst rectW = w + p * 2; // 矩形の幅\r\nconst rectH = h + p * 2; // 矩形の高さ\r\n\r\npush();\r\n\r\n// BLANK[1] 吹き出しの背景を先に描く\r\nfill(20,70,70);\r\nnoStroke();\r\nrect(x, y, rectW, rectH, 8); //xy横幅高さ丸み度\r\n\r\n\r\n// BLANK[2] 吹き出しの三角形を描く\r\nfill(20,70,70);\r\ntriangle(\r\nx + rectW - p*2, y + rectH, // 左上\r\nx + rectW - p/2, y + rectH - 30, // 右上\r\nx + rectW, y + rectH + 15 // 下\r\n);\r\n\r\n// 吹き出しのテキストを次に描く\r\ntextAlign(LEFT, CENTER);\r\nfill(255);\r\ntext(t, x + p, y + h / 2 + p);\r\n\r\npop();\r\n}\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 2:08:44 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/18/2025, 4:39:32 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "function setup() {\r\ncreateCanvas(400, 600);\r\n\r\n// noFill()：これ以降に描画する図形を塗りつぶさないように設定する\r\nnoFill();\r\n\r\n// forループ：iという変数を1から5まで1ずつ増やしながら、{}の中身を5回繰り返す\r\nfor (let i = 1; i <= 5; i++) {\r\n// let x：円の中心のx座標を入れるための変数を宣言する\r\nlet x;\r\n// let y：円の中心のy座標を入れるための変数を宣言する\r\nlet y;\r\n\r\n// let colors：5色分のRGB値を配列（リスト）として準備する\r\nlet colors = [\r\n[0, 153, 224], // 1番目: 青\r\n[0, 0, 0], // 2番目: 黒\r\n[255, 0, 0], // 3番目: 赤\r\n[255, 216, 0], // 4番目: 黄\r\n[0, 201, 117] // 5番目: 緑\r\n];\r\n\r\n// let c=colors[i-1]：i番目(1〜5)に対応する色をcolors配列から取り出す\r\n// (配列のインデックスは0から始まるため、i-1 を使う)\r\nlet c = colors[i - 1];\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// x=i*80：x座標を 80, 160, 240 と設定する (上の段)\r\nx = i * 80;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// x=i*80-200：x座標を 120 (4*80-200), 200 (5*80-200) と設定する (下の段)\r\nx = i * 80 - 200;\r\n}\r\n\r\n// if(i<=3)：もし i が3以下なら（1, 2, 3回目）\r\nif (i <= 3) {\r\n// y=50：y座標を 50 に設定する (上の段)\r\ny = 50;\r\n}\r\n// else：そうでなければ（i が4または5の時）\r\nelse {\r\n// y=80：y座標を 80 に設定する (下の段)\r\ny = 80;\r\n}\r\n\r\n// stroke(c[0], c[1], c[2])：取り出した色(c)を線の色(ストローク)に設定する\r\nstroke(c[0], c[1], c[2]);\r\n\r\n// strokeWeight(3)：線の太さを3ピクセルに設定する\r\nstrokeWeight(3);\r\n\r\n// drawcircle(x,y)：上で計算した x, y 座標を使って、円を描画する関数を呼び出す\r\ndrawcircle(x, y);\r\n}\r\n} // setup関数の終わり\r\n\r\n\r\n// drawcircle関数：円を描画するための自作関数\r\n// (x, y) を引数(ひきすう)として受け取る\r\nfunction drawcircle(x, y) {\r\n// const size = 60：円の直径を 60 に設定する\r\nconst size = 60;\r\n\r\n// ellipse(x, y, 幅, 高さ)：受け取った (x, y) を中心に、指定したサイズで円(楕円)を描画する\r\nellipse(x, y, size, size);\r\n} // drawcircle関数の終わり\r\n\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 2:53:07 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：ずっと繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする（これがないと文字が消えない）\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // 少しサイズを調整しました\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 2:57:01 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 3:02:59 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "javascript",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 3:07:40 PM",
+          "sources": [
+            {
+              "fileExtension": "js",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}\r\n\r\n"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "dataType": "",
+      "bodyData": {
+        "document": {
+          "savedAt": "11/25/2025, 3:07:47 PM",
+          "sources": [
+            {
+              "fileExtension": "",
+              "filename": "sketch.js",
+              "content": "let orin = [];\r\n\r\n// setup関数：プログラム実行時に最初に1回だけ呼び出される\r\nfunction setup() {\r\n// createCanvas(幅, 高さ)：指定したサイズで描画エリア（キャンバス）を作成する\r\ncreateCanvas(400, 600);\r\n}\r\n\r\n// draw関数：繰り返される描画処理\r\nfunction draw() {\r\n// 【重要1】毎回画面を白くリセットする\r\nbackground(255);\r\n\r\n// 状態が0（配列が空）のとき：ようこそ画面\r\nif (orin.length == 0) {\r\nfill(10);\r\ntextAlign(CENTER); // 文字を中央揃えにする\r\ntextSize(20); // サイズの調整\r\n// text(文字, x座標, y座標)\r\ntext(\"ようこそオリンピックの世界に\", width / 2, height / 2);\r\n\r\ntextSize(15);\r\nfill(50);\r\ntext(\"クリックしてください\", width / 2, height / 2 + 40);\r\n}\r\n\r\n// 状態が1（配列に要素が1つある）のとき：五輪描画\r\nif (orin.length == 1) {\r\nnoFill();\r\n\r\nfor (let i = 1; i <= 5; i++) {\r\nlet x, y;\r\nlet colors = [\r\n[0, 153, 224], // 青\r\n[0, 0, 0], // 黒\r\n[255, 0, 0], // 赤\r\n[255, 216, 0], // 黄\r\n[0, 201, 117] // 緑\r\n];\r\n\r\nlet c = colors[i - 1];\r\n\r\nif (i <= 3) {\r\nx = i * 80;\r\ny = 100; // 位置を少し調整\r\n} else {\r\nx = i * 80 - 200;\r\ny = 100 + 40; // 位置を少し調整\r\n}\r\n\r\nstroke(c[0], c[1], c[2]);\r\nstrokeWeight(5);\r\ndrawcircle(x, y);\r\n}\r\n}\r\n}\r\n\r\n// 【重要2】マウスがクリックされたら実行される関数\r\nfunction mousePressed() {\r\nif (orin.length == 0) {\r\n// 配列に1つデータを追加して、状態を「1」にする\r\norin.push(1);\r\n}\r\n}\r\n\r\n// 円を描く関数\r\nfunction drawcircle(x, y) {\r\nconst size = 60;\r\nellipse(x, y, size, size);\r\n}\r\n\r\n"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
